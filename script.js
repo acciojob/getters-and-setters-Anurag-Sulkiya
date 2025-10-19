@@ -1,7 +1,7 @@
 //complete this code
 class Person {
 	
-	constructor(name:string, age:number){
+	constructor(name, age){
 		this.name = name;
 		this.age = age;
 	}
@@ -10,9 +10,19 @@ class Person {
 	{
          return this.name;
 	} 
-	set age()
+
+	set name(name)
 	{
-      return this.age;
+        this.name = name;
+	}
+
+	get age(){
+      return  this.age;
+	}
+	
+	set age(age)
+	{
+      this.age = age;
 	}
 }
 
