@@ -31,8 +31,8 @@ class Student extends Person {
      super(name, age)
 	}
 
-	function study():void{
-      console.log(super.name + "is studying");
+	function study(){
+      console.log(this.name + "is studying");
 	}
 }
 
@@ -42,7 +42,7 @@ class Teacher extends Person {
 	}
 
 	function teach():vod{
-		console.log(super.name + " is teaching")
+		console.log(this.name + " is teaching")
 	}
 }
 
